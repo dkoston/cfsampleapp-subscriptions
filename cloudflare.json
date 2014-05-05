@@ -1,0 +1,55 @@
+{
+	"main": "public/javascripts/cf_sample_app_subscriptions.js",
+	"name": "cfsampleapp-subscriptions",
+	"category": "policy management",
+	"description": "Application that uses subscription based callbacks. For pipeline testing and example purposes",
+	"version": "0.0.1",
+	"contributors": [{
+		"name": "Dave Koston",
+		"email": "dkoston@cloudflare.com"
+	}],
+	"account": {
+		"callback_url": "http://cfapps.net/cfsampleapp-subscriptions/api-endpoint.php",
+		"user_fields": ["email"]
+	},
+	"billing": {
+		"type": "zone",
+		"plans": [
+            {
+                "name": "free app plan",
+                "price": "0.00"
+            },
+            {
+			    "name": "subscription app plan",
+			    "price": "5.99"
+		    }
+        ]
+	},
+	"config": {
+		"details": {
+			"Price": "Free or $5.99/month",
+			"Category": "Subscription App",
+			"Restrictions": "None"
+		},
+		"assets": {
+			"logos": {
+				"132px": "./public/images/logo-132.png",
+				"200px": "./public/images/logo-200.png"
+			}
+		},
+		"interface": [{
+			"id": "option_1",
+			"type": "select",
+			"name": "This is an example option",
+			"description": "Should the option be on?",
+			"options": [{
+				"label": "Yes",
+				"value": false,
+				"selected": true
+			}, {
+				"label": "No",
+				"value": true
+			}]
+		}]
+	}
+}
