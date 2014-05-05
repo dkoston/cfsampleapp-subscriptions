@@ -9,7 +9,7 @@
 		"email": "dkoston@cloudflare.com"
 	}],
 	"account": {
-		"callback_url": "http://cfapps.net/cfsampleapp-subscriptions/api-endpoint.php",
+		"callback_url": "http://cfapps.net/cfsampleapp-subscriptions/",
 		"user_fields": ["email"]
 	},
 	"billing": {
