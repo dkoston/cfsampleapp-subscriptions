@@ -3,7 +3,7 @@
 	"name": "cfsampleapp-subscriptions",
 	"category": "policy management",
 	"description": "Application that uses subscription based callbacks. For pipeline testing and example purposes",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"contributors": [{
 		"name": "Dave Koston",
 		"email": "dkoston@cloudflare.com"
