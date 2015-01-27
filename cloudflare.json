@@ -37,19 +37,32 @@
 				"200px": "./public/images/logo-200.png"
 			}
 		},
-		"interface": [{
-			"id": "option_1",
-			"type": "select",
-			"name": "This is an example option",
-			"description": "Should the option be on?",
-			"options": [{
-				"label": "Yes",
-				"value": false,
-				"selected": true
-			}, {
-				"label": "No",
-				"value": true
-			}]
-		}]
+		"interface": [
+			{
+				"id": "option_1",
+				"type": "select",
+				"name": "This is an example option",
+				"description": "Should the option be on?",
+				"options": [
+					{
+						"label": "Yes",
+						"value": false,
+						"selected": true
+					}, 
+					{
+						"label": "No",
+						"value": true
+					}
+				]
+		        },
+			{
+                        	"type": "string",
+                		"id": "firstname",
+                		"name": "First Name",
+                		"description": "Please tell us your first name.",
+                		"domain_request": true,
+                       		"private": true
+                       }
+                 ]
 	}
 }
