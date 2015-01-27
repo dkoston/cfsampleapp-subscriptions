@@ -3,7 +3,7 @@
 	"name": "cfsampleapp-subscriptions",
 	"category": "policy management",
 	"description": "Application that uses subscription based callbacks. For pipeline testing and example purposes",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"contributors": [{
 		"name": "Dave Koston",
 		"email": "dkoston@cloudflare.com"
@@ -61,6 +61,13 @@
                 		"name": "First Name",
                 		"description": "Please tell us your first name.",
                 		"domain_request": true,
+                       		"private": true
+                       },
+                       {
+                        	"type": "string",
+                		"id": "lastname",
+                		"name": "Last Name",
+                		"description": "Please tell us your first name.",
                        		"private": true
                        }
                  ]
